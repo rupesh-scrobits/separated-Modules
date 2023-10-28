@@ -1,0 +1,43 @@
+.modalInput {
+  margin-bottom: 2% !important;
+}
+
+.deleteConfirmModalCancelBtn {
+  border: 1px solid var(--color-selected) !important;
+  color: var(--color-selected) !important;
+}
+
+.deleteConfirmModalSubmitBtn {
+  border: 1px solid var(--delete-color) !important;
+  background-color: var(--delete-color) !important;
+}
+
+.deleteConfirmModalSubmitBtn:hover {
+  background-color: var(--delete-color) !important;
+}
+
+/* Row selection modal styles */
+
+.rowSelectionModal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 4%;
+}
+
+.rowSelectionModalBtns {
+  display: flex !important;
+  align-items: center !important;
+  gap: 2% !important;
+  border: none !important;
+  transition: none !important;
+  background: transparent !important;
+}
+
+.rowSelectionModalBtns:hover {
+  color: var(--color-selected) !important;
+}
+
+.rowSelectionModalBtns:hover svg path {
+  fill: var(--color-selected);
+}

@@ -1,0 +1,802 @@
+.site-layout-background {
+  background-color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0px 1rem !important;
+  }
+  .sidebar-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .outer-header {
+    height: 90px !important;
+  }
+  .main-header-container {
+    height: unset !important;
+  }
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    margin: 1.2rem;
+    justify-content: flex-end;
+  }
+  /* Styles for mobile devices */
+  .ant-layout .site-layout {
+    margin-left: unset !important;
+  }
+}
+
+.main-header-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  padding: 0 !important;
+  background: #fff !important;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 5;
+}
+
+/***********************Override table CSS********************/
+.ant-table {
+  border: 1px solid var(--default-gray);
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.ant-table-header {
+  color: var(--dark-gray) !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  color: var(--dark-gray) !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.ant-layout-sider-trigger {
+  border-right: 1px solid var(--default-gray);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+}
+
+.logo h2 {
+  margin: 0%;
+}
+
+.logo img {
+  color: white;
+  margin: 0%;
+  height: 45px;
+  width: 90px;
+}
+
+.layout-header {
+  color: white;
+  text-align: center;
+  height: 48px !important;
+}
+
+.proposal-sidebar-submenu {
+  margin-top: 8% !important;
+}
+
+.proposal-sidebar-submenu ul {
+  color: initial;
+  background-color: white !important;
+}
+
+.side-nav-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.side-nav-icon-wrapper-selected {
+  display: flex;
+  align-items: center;
+}
+
+.parent-list * {
+  color: var(--dark-gray) !important;
+}
+
+.parent-list .ant-menu-submenu-title {
+  padding-left: 0% !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  display: flex;
+  align-items: center;
+}
+
+.parent-list-selected .ant-menu-submenu-title {
+  padding-left: 0% !important;
+  background-color: var(--color-selected-light) !important;
+  background-color: var(--light-gray);
+  height: 48px !important;
+  line-height: 48px;
+}
+
+.ant-menu-inline-collapsed
+  .parent-list-selected
+  .ant-menu-submenu-title {
+  padding: 0% !important;
+}
+
+.parent-list .ant-menu-submenu-title:hover {
+  color: var(--color-selected) !important;
+}
+
+.parent-list .ant-menu-submenu-title:hover * {
+  fill: var(--color-selected) !important;
+  transition: all 0.1s ease-out;
+}
+
+.parent-list-selected .ant-menu-submenu-title:hover {
+  color: var(--color-selected) !important;
+}
+
+.parent-list-selected .ant-menu-submenu-title i {
+  color: var(--color-selected) !important;
+}
+
+.side-nav-icon-wrapper-selected svg path {
+  display: flex;
+  align-items: center;
+  fill: var(--color-selected) !important;
+}
+
+/************************Custom Sidenav component*************************/
+
+.side-nav-parent-list-item {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.side-nav-parent-list-item:hover * {
+  color: var(--color-selected) !important;
+}
+
+.side-nav-parent-list-item-selected {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.side-nav-parent-list-item h4 {
+  margin: 0%;
+}
+
+.side-nav-parent-list-item-selected h4 {
+  margin: 0%;
+  color: var(--color-selected) !important;
+}
+
+.side-nav-selected-represent {
+  width: 6px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: var(--color-selected) !important;
+  height: 48px;
+}
+
+.side-nav-selected-represent-none {
+  width: 6px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #fff;
+}
+
+.side-nav-list-item-child {
+  padding: 0% !important;
+  color: var(--dark-gray) !important;
+  background-color: #fff !important;
+}
+
+.side-nav-list-item-child::after {
+  transform: scaleY(0) !important;
+}
+
+.side-nav-list-item-child-dot {
+  background-color: var(--color-selected);
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+}
+
+.side-nav-list-item-child-dot-none {
+  background-color: #fff;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+}
+
+.side-nav-list-item-child-label {
+  display: flex;
+  gap: 5%;
+  padding-left: 15%;
+  align-items: center;
+}
+
+.side-nav-list-item-child-label-selected {
+  display: flex;
+  gap: 5%;
+  padding-left: 15%;
+  align-items: center;
+  color: var(--color-selected) !important;
+}
+
+.side-nav-list-item-child-label h4 {
+  margin: 0%;
+}
+
+.side-nav-list-item-child-label-selected h4 {
+  margin: 0%;
+  color: var(--color-selected);
+}
+
+.side-nav-list-item-child-label-selected
+  .list-item-child-label-icon
+  svg
+  path {
+  fill: var(--color-selected);
+}
+
+.list-item-child-label-icon {
+  display: flex;
+}
+
+.list-item-child-label-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.item-child-label-selected-padding {
+  padding-left: 5% !important;
+}
+
+.ant-layout-sider-children {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+}
+.ant-layout-sider-children .sidebar-container {
+  height: 100%;
+  overflow-x: hidden;
+}
+.sidebarProfileElement {
+  box-shadow: 0px -5px 14px -10px #a9a9a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  padding: 2% 8%;
+  margin-bottom: 6%;
+  cursor: pointer;
+}
+
+.sidebarProfileElement:hover * {
+  fill: var(--color-selected);
+  color: var(--color-selected);
+}
+
+.sidebarProfileElement h4 {
+  margin: 0%;
+}
+
+/***************************Pagination css override*************************/
+.paginationContainer .ant-pagination-total-text {
+  left: 20px;
+}
+.paginationContainer .ant-pagination-options {
+  right: 20px;
+}
+.ant-pagination-total-text {
+  position: absolute;
+  left: 0;
+}
+
+.ant-pagination-options {
+  position: absolute;
+  right: 0;
+}
+
+/*******************************Popover overide class******************************/
+.ant-popover-inner-content {
+  padding: 0% !important;
+  border-radius: 4px !important;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ant-popover-inner-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ant-popover-inner {
+  border-radius: 4px !important;
+}
+
+.ant-table-body::-webkit-scrollbar {
+  background-color: var(--light-gray);
+  height: 12px;
+  width: 12px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background-color: var(--default-gray);
+  border-radius: 20px;
+}
+
+/* Drawer CSS Override */
+
+.ant-drawer-title {
+  color: var(--color-selected) !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+}
+
+.createDrawerStyle .ant-drawer-header {
+  height: 80px;
+}
+
+.createDrawerStyle .ant-drawer-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 0% !important;
+  overflow-y: hidden !important;
+}
+
+.customDrawerContent {
+  height: calc(98vh - 105px);
+  overflow-y: auto;
+}
+
+.customDrawerContent .ant-form-item-explain-error {
+  margin-top: 2px;
+}
+.profileContaier .ant-form-item-margin-offset {
+  margin-bottom: unset !important;
+}
+.customDrawerFooter {
+  padding: 1% 1.5%;
+  box-shadow: 0px -2px 8px rgba(0, 187, 204, 0.15);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/****************************antd modal styles override***************************/
+.ant-modal-content {
+  border-radius: 8px !important;
+}
+.AssignVendor .ant-table-selection-col {
+  width: 8px;
+}
+.ant-modal-header {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.AssignVendor .ant-modal-body{
+  padding-bottom: 0px;
+}
+
+/**************************row selection popup styling*****************************/
+.rowSelectionPopup {
+  padding: 0% !important;
+  width: 600px !important;
+  border-radius: 8px !important;
+  position: relative !important;
+}
+
+.rowSelectionPopupVendor {
+  width: 200px !important;
+}
+
+.rowSelectionPopup .ant-notification-notice-description {
+  margin: 0% !important;
+}
+
+.rowSelectionPopup .ant-notification-notice-message {
+  display: none;
+}
+
+.rowSelectionPopup .ant-notification-notice-close {
+  position: absolute !important;
+  right: 1% !important;
+  top: 5% !important;
+}
+
+.rowSelectionPopup .ant-notification-notice-close-x svg {
+  width: 15px;
+}
+
+.rowSelectionPopup .ant-notification-notice-close-x svg path {
+  fill: var(--mid-gray);
+}
+
+/*************************************selected row style****************************************/
+
+.taskTableClass .ant-table-tbody > tr.ant-table-row-selected > td {
+  background: var(--background-green) !important;
+}
+
+.selectedRowStyle {
+  position: relative;
+}
+
+.dueDatedRowStyle > td {
+  background: var(--background-red) !important ;
+}
+
+/**************************dropbox select style****************************/
+.dropboxFieldsSelect .ant-select-selector {
+  outline: none;
+  border: 0.5px solid var(--default-gray) !important;
+  height: 38px !important;
+  border-radius: 4px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropboxFieldSelect * {
+  line-height: 1.5 !important;
+}
+
+/*************************carousel override CSS**********************/
+.slick-dots {
+  margin-top: 4% !important;
+  bottom: 0px !important;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: flex-end !important;
+}
+
+/**********************inputs css override**********************/
+.ant-input-affix-wrapper {
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center;
+}
+.kanbanHeader .ant-input-affix-wrapper {
+  border-radius: 2px !important;
+  color: #000000;
+}
+
+.ant-input-affix-wrapper input {
+  height: 38px !important;
+}
+
+.ant-form-item-label {
+  padding: 0% !important;
+}
+
+.ant-form-item-label label {
+  color: var(--light-text-gray) !important;
+}
+
+/*******************contact drawer select css******************/
+
+.selectContactCreateDrawer {
+  height: 38px;
+}
+
+.selectContactCreateDrawer .ant-select-selector {
+  height: 38px !important;
+  border-radius: 4px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.selectContactCreateDrawer .ant-select-selection-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-right: 0px !important;
+}
+
+.selectContactCreateDrawer .ant-select-selection-search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  left: 0px !important;
+  padding-left: 10px !important;
+}
+
+.selectContactCreateDrawer .ant-select-selection-placeholder {
+  display: flex;
+  align-items: center;
+}
+
+.selectContactCreateDrawer .ant-select-selection-overflow {
+  column-gap: 4px !important;
+}
+
+.selectContactCreateDrawer
+  .ant-select-selection-overflow
+  .ant-select-selection-search {
+  padding-left: 0px !important;
+}
+
+/**************************************************************/
+
+#contactSearchInput {
+  height: 30px !important;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('./utilities/icons/dateIcon.svg') no-repeat 97.5% !important;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('./utilities/icons/selectDrop.svg') white no-repeat
+    97.5% !important;
+}
+
+.mobileProfileElement {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-selected-light);
+  text-align: center;
+}
+.mobile-container {
+  position: relative;
+  height: 100%; /* Set the height of the container to fill the available space */
+}
+
+/********************************************Drawer Form item css*******************************************/
+.createDrawerFormItem {
+  margin-bottom: 3% !important;
+}
+
+.createDrawerFormItem .ant-form-item-label {
+  padding-bottom: 1% !important;
+  text-align: left !important;
+}
+
+.createDrawerFormItem .ant-form-item-label label {
+  color: var(--bluish-gray) !important;
+  height: max-content !important;
+}
+
+.createDrawerFormItem .ant-form-item-row {
+  flex-direction: column !important;
+}
+
+/*************************************Vendor Management Override CSS******************************************/
+
+.customRadioButton .ant-radio-inner::after {
+  background-color: var(--color-selected);
+}
+
+.customRadioButton .ant-radio-checked .ant-radio-inner {
+  border-color: var(--color-selected);
+}
+
+.customRadioButton .ant-radio-checked::after {
+  border: 1px solid var(--color-selected);
+}
+
+.customRadioButton .ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: 0 0 0 3px var(--color-selected-light);
+}
+
+.customRadioButton span {
+  color: var(--light-text-gray) !important;
+}
+
+/*********************************Project Management Override CSS************************************/
+
+.projectCard {
+  padding: 10px !important;
+  margin: 0% !important;
+}
+.projectCard .ant-card-meta-detail {
+  width: 100%;
+}
+.projectCard .ant-card-body {
+  padding: 15px 0px 0px 0px;
+}
+
+.projectCard .ant-card-meta-title {
+  color: var(--dark-gray);
+}
+.projectCard .ant-card-meta-detail {
+  width: 100%;
+}
+
+.projectCard .ant-card-meta-description {
+  color: var(--light-text-gray);
+}
+
+.projectTumbnailUpload {
+  position: relative;
+}
+
+.projectTumbnailUpload .ant-upload-select-picture-card {
+  /* width: 100% !important; */
+  border-radius: 4px !important;
+}
+
+.projectTumbnailUpload .ant-upload-list-picture-card-container {
+  position: absolute;
+  z-index: 5 !important;
+  background: #fff;
+  border: 1px dashed var(--default-gray) !important;
+  border-radius: 4px;
+}
+
+.projectTumbnailUpload .ant-upload-list-item {
+  border: none !important;
+}
+
+.attachmentModal .ant-modal-content .ant-modal-close {
+  width: 30px;
+  height: 30px;
+  top: -10px !important;
+}
+
+.attachmentModal .ant-modal-close-x {
+  width: 30px;
+  height: 30px;
+}
+
+.attachmentModal .ant-modal-header {
+  border: none !important;
+  padding-top: 0px !important;
+}
+
+.attachmentModal .ant-modal-body {
+  padding-bottom: 5px !important;
+}
+
+.loaderStyles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ************************************kanban search input override******************************** */
+
+.kaSearchInput .ant-input {
+  /* width: 175px; */
+  height: 25px !important;
+  border-radius: 4px;
+}
+
+.todoInput {
+  border: none !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+}
+.todoInput2 {
+  border: none !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  margin-bottom: 1rem !important;
+}
+.todoInput2 {
+  padding: 0rem 1rem;
+}
+.todoInput input,
+.todoInput2 input {
+  height: 37px !important;
+}
+.projectDate .ant-form-item-control-input-content {
+  width: 100px;
+  border-color: red !important;
+  height: 40px !important;
+}
+
+/* ********************************project Details activity modal******************************** */
+
+.header .ant-modal-header {
+  border-bottom: none;
+}
+
+/* assign to styling */
+
+.avatarContent .ant-popover-content {
+  top: -38px !important;
+}
+
+/*---------------------------Profile---------------------------*/
+.sidebar-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 5%;
+  background-color: var(--light-gray);
+  width: 85%;
+  margin: 3% auto;
+  padding: 4% 0%;
+  border-radius: 12px;
+}
+.profileLink {
+  cursor: default;
+}
+.sidebar-profile img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 0% 0% 0% 5%;
+}
+
+.profile-name {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name h3 {
+  margin: 0%;
+}
+
+.profile-name p {
+  word-break: break-word;
+  margin: 0%;
+}
+
+.sidebar-profile-collapsed {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-profile-collapsed img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.profile-name-collapsed {
+  display: none;
+}
+/* -------------------------Change Password CSS------------------------- */
+.profileChangePasswordFormContainer {
+  position: relative;
+  display: flex;
+  height: 25rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.profileChangePasswordFormContainer .ant-form-item {
+  width: 80%;
+}
+.profileChangePasswordFormContainer .ant-btn {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.profileChangePasswordFormContainer .ant-form-item-label > label {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+}
