@@ -1,0 +1,159 @@
+.formDate {
+  color: #637381 !important;
+  padding: 4px 11px;
+  border-radius: 2px;
+  width: 91%;
+  height: 20px;
+  background: transparent;
+  border: 1px solid #cdd2d7;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.todoFormDate {
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* -----------------Attachment--------------------- */
+
+.uploadFromDevice {
+  width: 100%;
+  height: 38px !important;
+  border-radius: 4px !important;
+  color: var(--color-selected) !important;
+  border-color: var(--color-selected) !important;
+  font-weight: 600 !important;
+}
+
+.attachContent {
+  height: 38px;
+  border: 1px solid var(--default-gray);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 4px 11px;
+  color: #8c8c8c;
+  gap: 10px;
+}
+
+.attachContent p {
+  margin: 0px;
+}
+
+.attachBtnWrapper {
+  margin: 2% 0% !important;
+}
+
+.attachBtn {
+  width: 100%;
+  border: none;
+  background: #e6f8fa;
+  color: var(--color-selected) !important;
+  border-radius: 4px !important;
+  height: 38px !important;
+  background-color: var(--color-selected-light) !important;
+  border-color: var(--color-selected-light) !important;
+  font-weight: 600 !important;
+}
+
+.attachBtn:hover {
+  color: var(--color-selected) !important;
+  border-color: var(--color-selected) !important;
+}
+
+.orText {
+  text-align: center;
+  color: #8c8c8c;
+  position: relative;
+}
+
+.orText::before {
+  content: ' ';
+  display: block;
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  background: var(--default-gray);
+}
+.orText::after {
+  content: ' ';
+  display: block;
+  height: 1px;
+  width: 200px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background: var(--default-gray);
+}
+
+.createBtn {
+  background: var(--color-selected);
+  border: 2px solid var(--color-selected);
+  border-radius: 2px;
+  color: white;
+  margin-left: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.createBtn:hover {
+  color: white !important;
+  border-radius: 2px;
+  background-color: var(--color-selected);
+  border: 2px solid var(--color-selected) !important;
+}
+
+.projectUpload {
+  font-weight: 600;
+  color: var(--mid-gray);
+}
+
+.createFormFieldsWrapper {
+  height: 85vh;
+  overflow-y: auto;
+}
+
+/* -------------------todoInput------------------ */
+.todoInput {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+.todoInput:focus {
+  outline: none;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.todoInput:hover {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.todoInput2:hover {
+  border: none;
+  background: rgba(60, 130, 255, 0.06);
+  border-bottom: 1px solid #3c82ff;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.todoInput2:hover input {
+  background: unset;
+}
+
+.todoIconStyle span {
+  padding-left: 20px;
+}
+
+.todoIconStyle span input {
+  border: none;
+  text-transform: uppercase;
+}
+
+/* --------------------------drawer Footer---------------------- */
+.drawerFooter {
+  border-top: none !important;
+}

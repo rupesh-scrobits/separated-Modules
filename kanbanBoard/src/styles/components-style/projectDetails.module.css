@@ -1,0 +1,204 @@
+.modalTitle {
+  color: #00bbcc;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+.button{
+  display: flex;
+  /* align-items: flex-end; */
+}
+.mainContent {
+  height: auto;
+}
+
+.projectDetailA {
+  height: auto;
+  padding-top: 20px;
+}
+
+.projectImage img {
+  height: 200px;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.projectDate {
+  width: 100%;
+  height: 38px !important;
+  border-radius: 4px !important;
+}
+
+.projectAttachment p {
+  color: var(--mid-gray);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projectAttachmentMain {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px !important;
+  border-radius: 4px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.projectAttachContent {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.projectAttachContentImg {
+  background-color: var(--default-gray);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.projectAttachContentText {
+  padding-left: 10px;
+  width: 88%;
+}
+
+.projectAttachContentText h3 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  color: var(--mid-gray);
+  font-size: 16px;
+  margin: 0px;
+}
+
+.projectAttachContent:hover .icon {
+  display: block;
+  cursor: pointer;
+}
+
+.icon {
+  display: none;
+}
+.icon svg path {
+  fill: var(--delete-color);
+}
+
+.projectAttachContentText p {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.projectAttachContentText a {
+  margin: 0px;
+  text-decoration: underline;
+}
+
+.attachBtn {
+  display: flex;
+  margin-left: auto;
+  border: none;
+  border-bottom: 1px solid var(--mid-gray);
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mid-gray);
+  cursor: pointer;
+}
+
+.projectReferenceContent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.projectReference h4 {
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.projectReference p {
+  font-size: 16px;
+  line-height: 22px;
+  width: 85%;
+  color: #8c8c8c;
+}
+
+.projectReferenceVideo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.projectReferenceVideo a {
+  text-decoration: underline;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.projectReferenceVideo span {
+  padding-right: 10px;
+}
+
+.projectDetailB {
+  margin: 2px 0px 10px 0px;
+}
+
+/* *****************************inputs******************************** */
+.projectInput {
+  color: #2f343e !important;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projectDescription {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* -------------------todoInput------------------ */
+.todoInput {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+.todoInput:focus {
+  outline: none;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.todoInput:hover {
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.todoInput2:hover {
+  border: none;
+  background: rgba(60, 130, 255, 0.06);
+  border-bottom: 1px solid #3c82ff;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.todoInput2:hover input {
+  background: unset;
+}
+
+.todoIconStyle span {
+  padding-left: 20px;
+}
+
+.todoIconStyle span input {
+  border: none;
+  text-transform: uppercase;
+}

@@ -1,0 +1,153 @@
+.modalTitle {
+  color: #00bbcc;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.modalText {
+  padding: 2px 20px;
+  margin: 0px;
+  color: #15ce05;
+  background-color: #e8fae6;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.mainContent {
+  height: auto;
+}
+
+.checkboxMain {
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+
+.checkboxStyle {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  color: var(--mid-gray);
+}
+
+.checkboxStyle span span {
+  border-radius: 4px !important;
+  border: 1px solid var(--mid-gray);
+}
+
+.checkboxDiv {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.checkboxDiv:hover {
+  background-color: #f9f9f9;
+}
+
+.checkboxDiv p {
+  display: none;
+  margin: 0px;
+}
+
+.checkboxDiv:hover p {
+  display: block;
+}
+
+.projectDetailA {
+  height: auto;
+  padding: 0px 20px;
+}
+
+.projectDetailA h1 {
+  margin: 0px 0px 10px;
+  font-weight: 600 !important;
+  font-size: 24px;
+  color: #2f343e;
+}
+
+/* label color not applied properly */
+.formLabel {
+  color: #2f343e !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  margin-left: 2px;
+}
+
+.subTask {
+  color: #00bbcc;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.subTask p {
+  margin: 0%;
+  cursor: pointer;
+}
+/* --------------------------Vendor Css Start--------------------------*/
+.vendorContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.vendorPlus svg{
+  fill: #ccc !important;
+}
+.vendorPlus {
+  background: none !important;
+  font-size: 30px !important;
+  cursor: pointer;
+  margin-left: 0.25rem !important;
+}
+
+/* --------------------------Vendor Css End--------------------------*/
+.todoInputWrapper {
+  margin-bottom: 10px !important;
+}
+
+.todoCreateButtons {
+  display: flex;
+  margin-top: 10px;
+  column-gap: 5px;
+}
+
+.todoInputWrapper button {
+  width: 60px;
+  border-radius: 4px;
+  color: var(--dark-gray);
+}
+
+.todoInputWrapper button:hover {
+  border-color: var(--color-selected);
+  color: var(--color-selected);
+}
+
+.tableActionButtonsStyle {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.tableActionButtonsStyle p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  margin: 0%;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tableActionButtonsStyle p:hover {
+  background-color: var(--light-gray);
+}

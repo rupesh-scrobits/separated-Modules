@@ -1,0 +1,459 @@
+.drawerSaveButton {
+  width: 168px;
+  height: 40px;
+  color: var(--color-selected) !important;
+  border-radius: 2px;
+  border-color: var(--color-selected) !important;
+}
+
+/* All Contacts Create Drawer CSS */
+
+.contactDetailsDrawerWrapper {
+  padding: 20px;
+}
+
+.contactDetailsInfoTitle {
+  margin: 0% 0% 1% 2%;
+  font-weight: 600;
+}
+
+.contactDetailsInfoTitleLead {
+  margin: 2% 0% 1% 0%;
+  font-weight: 600;
+}
+
+.contactDetailsWrapper {
+  margin: 0% 0% 0% 1.5%;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  border: 1px solid var(--default-gray);
+  border-radius: 4px;
+  font-family: 'Open Sans';
+}
+
+.contactDetailsTitle {
+  padding: 1.5% 2%;
+  margin: 0% 0% 2.5% 0%;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.contactDetailsInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfoFields {
+  display: flex;
+  margin: 0% 0% 2% 0%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactFieldsInput {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+  margin-bottom: 0px !important;
+}
+
+.contactFieldsInput label {
+  color: var(--light-text-gray);
+  margin-bottom: 1%;
+}
+
+.contactFieldsInput label span {
+  color: var(--delete-color);
+}
+
+.contactFieldsInput input {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  height: 38px;
+  border-radius: 4px !important;
+  padding: 0% 10px;
+  width: 100%;
+}
+
+.contactFieldsInput input[type='date'] {
+  gap: 5px;
+}
+
+.contactFieldsInput select {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  height: 38px;
+  border-radius: 4px !important;
+  padding: 0% 10px;
+  width: 100%;
+}
+
+.contactFieldsInput select::placeholder{
+  align-self: center;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../../utilities/icons/selectDrop.svg') white
+    no-repeat 94.5% !important;
+}
+
+.contactFieldsInput input:disabled {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  height: 38px;
+  border-radius: 4px;
+  padding: 0% 10px;
+  background-color: var(--light-gray);
+}
+
+.contactFieldsTextarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0% !important;
+}
+
+.contactFieldsTextarea label {
+  color: var(--light-text-gray);
+  margin-bottom: 1%;
+}
+
+.contactFieldsTextarea textarea {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  border-radius: 4px;
+  padding: 2% 2%;
+  width: 100%;
+}
+
+/* Drawer CSS style */
+.drawerSaveButton {
+  height: 40px;
+  color: #fff !important;
+  border-radius: 2px;
+  border-color: var(--color-selected) !important;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  background-color: var(--color-selected) !important;
+}
+
+.drawerSaveButtonTask {
+  height: 40px;
+  color: var(--color-selected) !important;
+  border-radius: 2px;
+  border-color: var(--color-selected) !important;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  width: 40%;
+}
+
+.newLeadFormSelectContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0% 0% 2% 0%;
+}
+
+.newLeadFormSelectContact .selectSpan {
+  margin: 3% 4% 0% 4%;
+  align-self: center;
+}
+
+.selectContact {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
+.selectContact label {
+  color: var(--light-text-gray);
+  margin-bottom: 1%;
+}
+
+.selectContact label span {
+  color: var(--delete-color);
+}
+
+.selectContact select {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  height: 38px !important;
+  border-radius: 4px;
+  padding: 0% 10px;
+}
+
+.createContactButton {
+  flex-basis: 45%;
+}
+
+.createContactButtonSelected {
+  flex-basis: 45%;
+}
+
+.createContactButton button {
+  height: 38px;
+  color: var(--color-selected) !important;
+  border-radius: 2px;
+  border-color: var(--color-selected) !important;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  width: 100%;
+}
+
+.createContactButtonSelected button {
+  height: 38px;
+  background-color: var(--color-selected) !important;
+  color: #fff !important;
+  border-radius: 2px;
+  border-color: var(--color-selected) !important;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  width: 100%;
+}
+
+.customFooter {
+  padding: 3% 3% 3% 3%;
+  box-shadow: 0px -2px 8px rgba(0, 187, 204, 0.15);
+}
+
+.addIconLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  border: 1px solid var(--default-gray);
+  border-radius: 4px;
+  width: 85%;
+  padding: 5% 0%;
+}
+
+.addIconPopoverContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popoverIcon {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4% 2%;
+}
+
+.popoverIcon:hover {
+  transform: scale3d(1.15, 1.15, 1.15);
+}
+
+/* Send mail drawer css */
+.sendMailToWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sendMailTo {
+  display: flex;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--default-gray);
+}
+
+.sendMailTo p {
+  margin: 1.5% 5% 0% 0%;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sendToMailId {
+  display: flex;
+  flex-basis: 95%;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.extraMembers {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tagNameAndPhone {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagNameAndPhone span {
+  font-size: 12px;
+  line-height: 1.2;
+  width: 120px;
+  cursor: default;
+}
+
+.extraPeoplePopover {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendToMailIdItem {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-basis: 45%;
+  padding: 5px 10px 5px 10px !important;
+  border: 1px solid var(--default-gray) !important;
+  border-radius: 64px !important;
+  margin: 5px 0% !important;
+  background-color: var(--color-selected-light) !important;
+  font-size: 13px !important;
+}
+
+.sendToMailIdItem span {
+  display: flex;
+  align-items: center;
+}
+
+.sendToMailIdItem svg {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.sendToWAId {
+  display: flex;
+  flex-basis: 95%;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sendToWAIdItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 155px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid var(--default-gray);
+  border-radius: 64px;
+  margin: 5px 0%;
+  background-color: var(--color-selected-light);
+  font-size: 13px;
+}
+
+.sendToWAIdItem span {
+  display: flex;
+  align-items: center;
+}
+
+.sendToWAIdItem svg {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.mailSubjectAndBody {
+  padding: 2% 5%;
+}
+
+.mailSubject {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2% 0%;
+}
+
+.mailSubject label {
+  color: var(--mid-gray);
+  margin-bottom: 1%;
+  font-size: 16px;
+}
+
+.mailSubject textarea {
+  outline: none;
+  border: 0.5px solid var(--default-gray);
+  border-radius: 4px;
+  padding: 2% 2%;
+  resize: none;
+}
+
+.templateMsgDisplay p {
+  width: 100%;
+  margin: 15px 0px;
+  white-space: pre-wrap;
+}
+
+.templateMessagesInput {
+  margin: 15px 0px;
+}
+
+.chevronAndtext {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.chevronAndtext svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.chevronAndtext svg path {
+  fill: var(--color-selected);
+}
+
+.customTagInput {
+  width: 100%;
+  border: 1px solid var(--default-gray);
+  border-radius: 4px;
+  margin: 0% !important;
+  position: relative;
+  height: 38px;
+}
+
+.customTagInput span {
+  position: relative;
+  bottom: 2px;
+}
+
+.customTagInput input {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  padding: 1px 8px !important;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  caret-color: var(--dark-gray);
+}
+
+.asterikSymbol{
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  color: #ff4d4f;
+}
+
+@media only screen and (max-width: 768px) {
+  .newLeadFormSelectContact,
+  .contactInfoFields {
+    flex-direction: column;
+  }
+  .newLeadFormSelectContact {
+    align-items: unset;
+  }
+  .contactFieldsInput {
+    width: 100%;
+  }
+}

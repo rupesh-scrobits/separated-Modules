@@ -1,0 +1,66 @@
+.mainContainer {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.cardContent {
+  border-radius: 4px !important;
+  cursor: pointer;
+}
+.cardTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Add some spacing from the cards */
+}
+.projectDeletePopoverContainer{
+  width: 10rem;
+}
+.projectDeletePopoverBodyTextDelete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.cardContentImage {
+  height: 9rem;
+  object-fit: cover;
+  object-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: contain;
+}
+.cardContent:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cardText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectCardDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.projectCardDate p {
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: var(--light-text-gray);
+}

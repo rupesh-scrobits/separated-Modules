@@ -1,0 +1,74 @@
+.createGoalFormFieldsWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0% 4%;
+}
+
+.createUserPersonalDetails {
+  display: flex;
+  margin-left: 1%;
+}
+
+.createUserPersonalDetails h2 {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-text-gray);
+}
+
+.createUserForm {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.createUserFormFields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4%;
+  padding: 0% 2%;
+}
+
+.createUserFormFieldsItem {
+  flex-basis: 48%;
+  margin-bottom: 1.5% !important;
+}
+
+.createUserFormFieldsTextArea {
+  width: 100%;
+}
+
+.createUserFormFieldsTextArea textarea {
+  border-color: var(--admin-panel-gray);
+  border-radius: 4px;
+}
+
+.createUserDrawerInput {
+  border-radius: 4px !important;
+  height: 42px !important;
+}
+
+.createDrawerSubmit {
+  padding: 1% 5%;
+  left: 0;
+  bottom: 0;
+  width: 745px;
+  box-shadow: 0px -2px 8px rgba(39, 150, 253, 0.15);
+}
+
+.createUserBtn,
+.createUserBtn:hover {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  height: 32px !important;
+  width: 180px !important;
+  border-radius: 4px !important;
+  background-color: var(--color-selected) !important;
+  color: #fff !important;
+  border-color: var(--color-selected) !important;
+}
