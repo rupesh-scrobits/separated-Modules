@@ -1,0 +1,19 @@
+:root {
+  --color-selected: #00bbcc;
+  --table-header: #f3f7ff;
+  --dark-gray: #2f343e;
+  --mid-gray: #555555;
+  --light-gray: #f7f7f7;
+  --default-gray: #d9d9d9;
+  --lighter-gray: #f4f4f4;
+  --light-text-gray: #8c8c8c;
+  --color-selected-light: rgba(0, 187, 204, 0.1);
+  --delete-color: #fe5d6e;
+  --background-green: #e0ffde;
+  --background-red: #fe5d6e1a;
+  --background-light: #e5f8fa;
+  --login-page-dots: #d2dbe8;
+  --font-family: Open Sans;
+
+  /* --font-family: 'open-sans' !important; */
+}
